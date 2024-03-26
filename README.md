@@ -3,7 +3,8 @@
 ## This will help you to access & review the project
 
 <ol type="1">
-<li>Profile(User) -> profile.html & Add New Approval Flow - Multiple User Approval -> Add New Approval Flow - Multiple User Approval</li>
+<li>Profile(User) -> profile.html </li> 
+ <li>Add New Approval Flow - Multiple User Approval -> addNewApproval.html</li>
  <li>Both the pages a linked in sidebar menu, can access by clicking "Add New" & "Company List"</li>
 <li>Can toggle sidebar using "<>" button</li>
 <li>Can change sidebar theme by toggling the "light" & "dark" button</li>
