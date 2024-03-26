@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cemex Test | Profile</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/addNewApproval.css" />
+    <script src="../scripts/index.js"></script>
+  </head>
+  <body class="bg-container">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="../assets/images/logo.png" alt="" />
+        <div class="brand-name">logo</div>
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+      <ul class="menu">
+        <li class="navbar-item">28 Oct 2023</li>
+        <li class="navbar-item">
+          <img src="../assets/vectors/bell.svg" alt="" />
+          <img src="../assets/vectors/globe.svg" alt="" />
+        </li>
+        <li class="navbar-item">
+          <div class="user-profile-wrapper">
+            <div class="avatar-wrapper">
+              <img class="avatar" src="../assets/images/avatar.png" alt="" />
+            </div>
+
+            Sanjaya Perera
+            <img src="../assets/vectors/arrow-down.svg" alt="" />
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="sidebar" class="sidebar active">
+      <div>
+        <div class="menu-section">main</div>
+        <ul class="sidebar-menu-wrapper">
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/home.svg" alt="icon" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu active" href="#">
+              <img src="../assets/vectors/reports.svg" alt="icon" />
+              <span>Client Management</span>
+            </a>
+            <ul class="sub-menu-wrapper">
+              <li>
+                <a class="sub-menu active" href="/pages/addNewApproval.html"
+                  >Add New</a
+                >
+              </li>
+              <li>
+                <a class="sub-menu" href="/pages/profile.html">Company List</a>
+              </li>
+              <li><a class="sub-menu" href="#">View Company</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/user.svg" alt="icon" />
+              <span>User Management</span>
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/calendar.svg" alt="icon" />
+              <span>Schedules</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <div class="btn-wrapper">
+          <div class="btn" onclick="handleToggleMode('light')">
+            <img src="../assets/vectors/sun-light.svg" alt="icon" />
+            <span>Light</span>
+          </div>
+          <div class="btn" onclick="handleToggleMode('dark')">
+            <img src="../assets/vectors/half-moon.svg" alt="icon" />
+            <span>Dark</span>
+          </div>
+          <div id="btn-indicator" class="btn-indicator dark"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-toggle-btn" onclick="handleToggleSidebar()">
+      <img src="../assets/vectors/union.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="header">Approval flows - add new</div>
+      <div class="inner-container">
+        <div class="add-new-approval">
+          <div class="back-btn" role="button"><img src="" alt="" />Back</div>
+          <div
+            class="add-new-btn"
+            role="button"
+            onclick="handleOpenAddNewForm()"
+          >
+            Add New
+          </div>
+          <div
+            id="add-new-approval-form-overlay"
+            class="add-new-approval-form-overlay"
+          >
+            <div id="add-new-approval-form" class="add-new-approval-form">
+              <div class="form-header">
+                <div class="form-title">Add New Multiple User Approver</div>
+                <img
+                  role="button"
+                  class="close-btn"
+                  src="../assets/vectors/wrong.svg"
+                  alt=""
+                  onclick="handleCloseAddNewForm()"
+                />
+              </div>
+              <form action="">
+                <div class="form-wrapper">
+                  <div class="form-input-wrapper">
+                    <input type="text" placeholder="Company" required />
+                    <input
+                      type="text"
+                      placeholder="Department/ Location"
+                      required
+                    />
+                  </div>
+                  <div class="approver-list-wrapper">
+                    <table class="approver-table">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/plus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/plus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/plus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/plus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/plus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="heading-wrapper">
+                    <div class="sub-heading">Selected Approver</div>
+                    <div class="special-note">Required Minimum 3 Approvals</div>
+                  </div>
+                  <div class="selected-list-wrapper">
+                    <table class="selected-table">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/minus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/minus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              src="../assets/images/image-1.png"
+                              alt=""
+                            />1045
+                          </td>
+                          <td>Wilson Bergson</td>
+                          <td>
+                            <div class="add-btn">
+                              <img src="../assets/vectors/minus.svg" alt="" />
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="action-btns">
+                    <button type="button" class="reset-btn">Reset</button>
+                    <button type="button" class="save-btn">Save</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

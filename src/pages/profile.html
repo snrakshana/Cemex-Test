@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cemex Test | Profile</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/profile.css" />
+  </head>
+  <body class="bg-container">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="../assets/images/logo.png" alt="" />
+        <div class="brand-name">logo</div>
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+      <ul class="menu">
+        <li class="navbar-item">28 Oct 2023</li>
+        <li class="navbar-item">
+          <img src="../assets/vectors/bell.svg" alt="" />
+          <img src="../assets/vectors/globe.svg" alt="" />
+        </li>
+        <li class="navbar-item">
+          <div class="user-profile-wrapper">
+            <div class="avatar-wrapper">
+              <img class="avatar" src="../assets/images/avatar.png" alt="" />
+            </div>
+
+            Sanjaya Perera
+            <img src="../assets/vectors/arrow-down.svg" alt="" />
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="sidebar" class="sidebar active">
+      <div>
+        <div class="menu-section">main</div>
+        <ul class="sidebar-menu-wrapper">
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/home.svg" alt="icon" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu active" href="#">
+              <img src="../assets/vectors/reports.svg" alt="icon" />
+              <span>Client Management</span>
+            </a>
+            <ul class="sub-menu-wrapper">
+              <li>
+                <a class="sub-menu" href="/pages/addNewApproval.html"
+                  >Add New</a
+                >
+              </li>
+              <li>
+                <a class="sub-menu active" href="/pages/profile.html"
+                  >Company List</a
+                >
+              </li>
+              <li><a class="sub-menu" href="#">View Company</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/user.svg" alt="icon" />
+              <span>User Management</span>
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="#">
+              <img src="../assets/vectors/calendar.svg" alt="icon" />
+              <span>Schedules</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <div class="btn-wrapper">
+          <div class="btn" onclick="handleToggleMode('light')">
+            <img src="../assets/vectors/sun-light.svg" alt="icon" />
+            <span>Light</span>
+          </div>
+          <div class="btn" onclick="handleToggleMode('dark')">
+            <img src="../assets/vectors/half-moon.svg" alt="icon" />
+            <span>Dark</span>
+          </div>
+          <div id="btn-indicator" class="btn-indicator dark"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-toggle-btn" onclick="handleToggleSidebar()">
+      <img src="../assets/vectors/union.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="header">my profile</div>
+      <div class="inner-container">
+        <div class="row">
+          <div class="profile-card">
+            <div class="column-1">
+              <div class="profile-avatar-wrapper">
+                <div class="profile-avatar">
+                  <img src="../assets//images/avatar.png" alt="" />
+                </div>
+                <div class="profile-name">Sanjaya Perera</div>
+                <div class="designation">UI Designer</div>
+              </div>
+              <div class="profile-contact-wrapper">
+                <div class="row">
+                  <img src="../assets/vectors/phone.svg" alt="" />
+                  <div class="contact-item">+94 777777777</div>
+                </div>
+                <div class="row">
+                  <img src="../assets/vectors/location-marker.svg" alt="" />
+                  <div class="contact-item">
+                    28, Perera Road, Dehiwala. Sri Lanka.
+                  </div>
+                </div>
+                <div class="row">
+                  <img src="../assets/vectors/email.svg" alt="" />
+                  <div class="contact-item">Sanjaya.Perera@gmail.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="basic-info-wrapper">
+                <div class="section-header">Basic Information</div>
+                <div class="info-wrapper">
+                  <div class="info-column">
+                    <div class="title">Gender</div>
+                    <div>Male</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Birthday</div>
+                    <div>28/10/1990</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Nationality</div>
+                    <div>Sri Lanka</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Date of Birth</div>
+                    <div>28, Perera Road</div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-info-wrapper">
+                <div class="section-header">Company Information</div>
+                <div class="info-wrapper">
+                  <div class="info-column">
+                    <div class="title">Role</div>
+                    <div>UI Designer</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Team</div>
+                    <div>Design</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Department</div>
+                    <div>Design</div>
+                  </div>
+                  <div class="info-column">
+                    <div class="title">Employment Type</div>
+                    <div>Full Time</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="section-header">My Team</div>
+            <div class="team-members-wrapper">
+              <div class="image-wrapper">
+                <img src="../assets/images/image-2.png" alt="" />
+                <img src="../assets/images/image-1.png" alt="" />
+                <img src="../assets/images/image-3.png" alt="" />
+                <img src="../assets/images/image-4.png" alt="" />
+              </div>
+              <div class="full-team-link">Full Team</div>
+              <div class="members-count">25 People</div>
+            </div>
+            <div class="chart-wrapper">
+              <div class="section-header">Leave</div>
+              <canvas id="chart" width="400" height="175"></canvas>
+              <div class="legend-list">
+                <div class="legend-item">Casual</div>
+                <div class="legend-item">Sick</div>
+                <div class="legend-item">Annual</div>
+                <div class="legend-item">Maternity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="menu-wrapper">
+            <ul class="sub-menu-wrapper">
+              <li class="sub-menu">Contact Information</li>
+              <li class="sub-menu">General Detail</li>
+              <li class="sub-menu active">Roles & Permissions</li>
+              <li class="sub-menu">Internal Work History</li>
+              <li class="sub-menu">Qualifications</li>
+              <li class="sub-menu">Work History</li>
+              <li class="sub-menu">Bank Details</li>
+              <li class="sub-menu">Benefit Details</li>
+              <li class="sub-menu">Monthly Slips</li>
+            </ul>
+          </div>
+          <div class="content-wrapper">
+            <div class="roles-wrapper">
+              <div class="section-header">Roles</div>
+              <div class="roles">
+                <div class="role-badge">Developer</div>
+                <div class="role-badge">Admin</div>
+              </div>
+            </div>
+            <div class="permissions-wrapper">
+              <div class="section-header">Permissions</div>
+              <div class="permission-wrapper">
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 1</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 2</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 3</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 4</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 5</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 6</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 7</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 8</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 9</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 10</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 11</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 12</div>
+                </div>
+                <div class="permission-list">
+                  <img src="../assets/vectors/bullet.svg" alt="" />
+                  <div>Permission 13</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/chart.js"></script>
+  </body>
+</html>

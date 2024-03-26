@@ -1,0 +1,338 @@
+@import "./variables.css";
+
+.inner-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 40vh;
+}
+
+@media only screen and (max-width: 1400px) {
+  .inner-container .row {
+    height: 50vh;
+  }
+}
+
+.section-header {
+  color: var(--blue-3);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-card,
+.team-card {
+  height: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--grey-1);
+  background-color: var(--white);
+}
+
+.profile-card {
+  width: 60%;
+  display: flex;
+}
+
+.profile-card .column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  padding-right: 25px;
+  border-right: 1px solid var(--grey-2);
+}
+
+.profile-avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar-wrapper .profile-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.profile-avatar-wrapper .profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile-avatar-wrapper .profile-name {
+  color: var(--blue-2);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.profile-avatar-wrapper .designation {
+  color: var(--grey-7);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.profile-contact-wrapper .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  height: fit-content !important;
+  font-size: 0.875rem;
+  color: var(--grey-7);
+  margin-top: 10px;
+}
+
+.profile-contact-wrapper .row img {
+  margin-top: 5px;
+}
+
+.profile-contact-wrapper .row .contact-item {
+  /* width: 70%;
+  white-space: wrap; */
+}
+
+.profile-card .column-2 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+
+.profile-card .column-2 .info-wrapper {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.info-wrapper .info-column {
+  width: 50%;
+  color: var(--grey-7);
+  font-size: 0.875rem;
+  line-height: 22px;
+}
+
+.info-wrapper .info-column .title {
+  font-weight: 500;
+}
+
+.team-card {
+  width: 40%;
+}
+
+.team-card .team-members-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.team-members-wrapper .image-wrapper img:nth-child(n) {
+  position: relative;
+  margin-right: -20px;
+}
+
+.team-members-wrapper .image-wrapper img:nth-child(1) {
+  z-index: 4;
+}
+.team-members-wrapper .image-wrapper img:nth-child(2) {
+  z-index: 3;
+}
+.team-members-wrapper .image-wrapper img:nth-child(3) {
+  z-index: 2;
+}
+.team-members-wrapper .image-wrapper img:nth-child(4) {
+  z-index: 1;
+}
+
+.team-members-wrapper .full-team-link {
+  margin-left: 30px;
+  color: var(--blue-1);
+  font-size: 0.875rem;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.team-members-wrapper .members-count {
+  width: 75px;
+  margin-left: auto;
+  color: var(--grey-4);
+  font-size: 0.875rem;
+  line-height: 22px;
+}
+
+.chart-wrapper .legend-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chart-wrapper .legend-item {
+  color: var(--grey-4);
+  font-size: 0.625rem;
+}
+
+#chart {
+  width: 100%;
+  height: 175px;
+  background-color: var(--white);
+}
+
+.detail-card {
+  display: flex;
+  gap: 15px;
+  height: fit-content;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--grey-1);
+  background-color: var(--white);
+}
+
+.detail-card .menu-wrapper {
+  width: 20%;
+}
+
+.detail-card .sub-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.detail-card .sub-menu {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  border-left: 2px solid transparent;
+  color: var(--grey-7);
+  font-size: 0.875rem;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+.detail-card .sub-menu:hover,
+.detail-card .sub-menu.active {
+  color: var(--blue-1);
+  border-left: 2px solid rgba(41, 152, 255, 0.8);
+}
+
+.detail-card .content-wrapper {
+  width: 80%;
+}
+
+.detail-card .roles-wrapper {
+  margin-bottom: 25px;
+}
+
+.detail-card .roles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.detail-card .roles .role-badge {
+  padding: 5px 15px;
+  color: var(--grey-6);
+  font-size: 0.875rem;
+  border-radius: 20px;
+  border: 1px solid rgba(41, 152, 255, 0.3);
+  background-color: rgba(41, 152, 255, 0.2);
+}
+
+.detail-card .permission-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--grey-2);
+}
+
+.detail-card .permission-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--grey-6);
+  font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .inner-container .row {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .profile-contact-wrapper .row {
+    flex-direction: row !important;
+  }
+  .profile-card,
+  .team-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .profile-card .column-1,
+  .profile-card .column-2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .profile-card .column-1,
+  .profile-card .column-2 {
+    width: 100%;
+  }
+
+  .profile-card .column-2 {
+    padding-left: unset;
+    padding-top: 25px;
+  }
+
+  .detail-card {
+    flex-direction: column;
+  }
+
+  .detail-card .menu-wrapper {
+    width: 100%;
+
+    overflow-x: scroll;
+  }
+
+  .detail-card .sub-menu-wrapper {
+    flex-direction: row;
+  }
+
+  .detail-card .sub-menu {
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .detail-card .content-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  --white: #ffffff;
+
+  --grey-1: #efefef;
+  --grey-2: #d9d9d9;
+  --grey-3: #8a8c91;
+  --grey-4: #888888;
+  --grey-5: #8a8c91;
+  --grey-6: #7a7a7a;
+  --grey-7: #5e6067;
+
+  --blue-1: #2998ff;
+  --blue-2: #1f3b66;
+  --blue-3: #253053;
+  --blue-4: #2d2f39;
+  --blue-5: #202532;
+
+  --pink: #f2c7ba;
+
+  --black: #000000;
+}

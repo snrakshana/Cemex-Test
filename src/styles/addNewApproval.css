@@ -1,0 +1,249 @@
+@import "./variables.css";
+
+.add-new-approval {
+  position: relative;
+  height: 70vh;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--grey-1);
+  background-color: var(--white);
+}
+
+.add-new-approval .back-btn,
+.add-new-approval .add-new-btn {
+  position: absolute;
+  top: -15px;
+  padding: 5px 15px;
+  font-size: 0.875rem;
+  border-radius: 20px;
+  transition: 0.3s all ease-out;
+}
+
+.add-new-approval .back-btn:hover,
+.add-new-approval .back-btn:active,
+.add-new-approval .add-new-btn:hover,
+.add-new-approval .add-new-btn:active {
+  transform: scale(0.9);
+}
+
+.add-new-approval .back-btn {
+  left: 20px;
+  color: var(--grey-3);
+  border: 1px solid var(--grey-3);
+  background-color: var(--white);
+}
+
+.add-new-approval .add-new-btn {
+  right: 20px;
+  color: var(--white);
+  border: 1px solid var(--blue-1);
+  background-color: var(--blue-1);
+}
+
+.add-new-approval-form-overlay {
+  transition: 0.4s all ease-in-out;
+}
+
+.add-new-approval-form-overlay.active {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.add-new-approval-form {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 40%;
+  height: 100vh;
+  border-top-left-radius: 20px;
+  background-color: var(--white);
+  box-shadow: -3px 0px 20px 0px #00000033;
+  transition: 0.4s all ease-in-out;
+}
+
+.add-new-approval-form.active {
+  right: 0;
+}
+
+.add-new-approval-form .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.add-new-approval-form .form-title {
+  color: var(--blue-3);
+  font-size: 1.25rem;
+}
+
+.add-new-approval-form .close-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.add-new-approval-form .close-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-wrapper {
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.form-input-wrapper,
+.approver-list-wrapper,
+.selected-list-wrapper {
+  padding: inherit;
+  border-radius: 10px;
+  border: 1px solid var(--grey-2);
+  margin-bottom: 20px;
+}
+
+.approver-list-wrapper {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+.add-new-approval-form .form-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.add-new-approval-form .form-input-wrapper input {
+  width: 50%;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.add-new-approval-form table .add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--grey-2);
+  box-shadow: 0px 0px 8px 0px #00000014;
+}
+
+.add-new-approval-form table .add-btn img {
+  object-fit: cover;
+  margin: auto;
+}
+
+.add-new-approval-form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.add-new-approval-form table th:nth-child(2) {
+  text-align: left;
+}
+
+.add-new-approval-form table th {
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  color: var(--blue-3);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.add-new-approval-form table th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.add-new-approval-form table th:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.add-new-approval-form .approver-table thead tr {
+  background: #f4f5f9;
+}
+
+.add-new-approval-form .selected-table thead tr {
+  background: #2998ff26;
+}
+
+.add-new-approval-form table tbody tr {
+  color: var(--grey-7);
+  font-size: 0.875rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.add-new-approval-form table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.heading-wrapper .sub-heading {
+  color: var(--blue-3);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.heading-wrapper .special-note {
+  color: var(--grey-4);
+  font-size: 0.875rem;
+}
+
+.action-btns {
+  float: right;
+  padding: 20px 0;
+}
+
+.action-btns .reset-btn {
+  outline: 0;
+  padding: 5px 30px;
+  margin-right: 10px;
+  border-radius: 30px;
+  color: var(--blue-1);
+  border: 1px solid var(--grey-2);
+  background-color: var(--white);
+}
+
+.action-btns .save-btn {
+  outline: 0;
+  border: 0;
+  padding: 5px 30px;
+  border-radius: 30px;
+  color: var(--white);
+  background-color: var(--blue-1);
+  box-shadow: 0px 2px 0px 0px #0000000b;
+}
+
+@media only screen and (max-width: 992px) {
+  .add-new-approval-form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .add-new-approval-form {
+    width: 100%;
+  }
+}
